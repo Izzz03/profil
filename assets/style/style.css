@@ -142,4 +142,19 @@ footer {
     nav li {
         margin: 0 9px; /* Jarak antar item navbar */
     }
+
+    .GitHub {
+  width: 50px; 
+  height: auto; 
+}
+
+.Instagram {
+  width: 50px; 
+  height: auto;
+}
+
+.WhatsApp {
+  width: 50px; 
+  height: auto;
+}
 }

@@ -10,95 +10,105 @@
 
 <body>
     <header>
-        <div class="jumbotron">
-            <h1>M.Izzaz Zhoorif Nurhan</h1>
-        </div>
+        <h1>M.Izzaz Zhoorif Nurhan</h1>
+        <nav>
+            <ul>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#favorit">Favorit</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="navbar-fixed">
-        <ul>
-            <li><a href="#Personal">Personal</a></li>
-            <li><a href="#Pendidikan">Pendidikan</a></li>
-            <li><a href="#Favorit">Favorit</a></li>
-            <li><a href="#Contact">Kontak</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="Personal">
-            <h2>Personal</h2>
-            <img src="assets/image/aku.jpg" class="gambar" alt="Foto Izzaz">
-            <p>Berasal dari Kota Medan. Berstatus sebagai siswa yang bersekolah di SMK Negeri 9 Medan dan merupakan anak kedua dari empat bersaudara.</p>
-        </section>
+        <article>
+            <section id="personal">
+                <h2>Personal</h2>
+                <figure>
+                    <img src="assets/image/aku.jpg" alt="Foto Izzaz">
+                    <figcaption>Foto Profil</figcaption>
+                </figure>
+                <p>Berasal dari Kota Medan. Berstatus sebagai siswa yang bersekolah di SMK Negeri 9 Medan dan merupakan anak kedua dari empat bersaudara.</p>
+            </section>
 
-        <section id="Pendidikan">
-            <h2>Pendidikan</h2>
-            <img src="assets/image/P.jpg" class="pendidikan" alt="Pendidikan"> 
-            <p>Saya memulai pendidikan pertama di TK tahun 2010 di Jakarta. Setelah itu saya lanjut ke Sekolah Dasar (SD) di Pattimpus Kota Medan. Lalu saya lanjut masuk ke SMP dan lulus pada tahun 2023 di SMP Negeri 7 MEDAN. Sekarang saya melanjutkan pendidikan ke SMK di SMK Negeri 9 MEDAN dengan jurusan RPL.</p>
-        </section>
+            <section id="pendidikan">
+                <h2>Pendidikan</h2>
+                <figure>
+                    <img src="assets/image/P.jpg" alt="Pendidikan">
+                    <figcaption>Riwayat Pendidikan</figcaption>
+                </figure>
+                <p>Saya memulai pendidikan pertama di TK tahun 2010 di Jakarta. Setelah itu saya lanjut ke Sekolah Dasar (SD) di Pattimpus Kota Medan. Lalu saya lanjut masuk ke SMP dan lulus pada tahun 2023 di SMP Negeri 7 MEDAN. Sekarang saya melanjutkan pendidikan ke SMK di SMK Negeri 9 MEDAN dengan jurusan RPL.</p>
+            </section>
 
-        <section id="Favorit">
-            <h2>Favorit</h2>
-            <h3>Makanan Favorit</h3>
-            <img src="assets/image/Kebab.jpg" class="kebab" alt="Kebab"> 
-            <p>Ini makanan favorit saya.</p>
+            <section id="favorit">
+                <h2>Favorit</h2>
+                <article>
+                    <h3>Makanan Favorit</h3>
+                    <figure>
+                        <img src="assets/image/Kebab.jpg" alt="Kebab">
+                        <figcaption>Kebab</figcaption>
+                    </figure>
+                    <p>Ini makanan favorit saya.</p>
+                </article>
 
-            <h3>Minuman Favorit</h3>
-            <img src="assets/image/Kopi.jpg" class="kopi" alt="Kopi"> 
-            <p>Ini minuman favorit saya.</p>
-        </section>
+                <article>
+                    <h3>Minuman Favorit</h3>
+                    <figure>
+                        <img src="assets/image/Kopi.jpg" alt="Kopi">
+                        <figcaption>Kopi</figcaption>
+                    </figure>
+                    <p>Ini minuman favorit saya.</p>
+                </article>
+            </section>
+        </article>
 
-        <section id="Contact">
-            <h2>Kontak</h2>
-            <p>Jika ingin lebih tahu banyak, kunjungi kontak berikut:</p>
-            <div class="social-media-links">
-                <a href="https://instagram.com/izzaz.zhoorif">
-                    <img src="assets/image/instagram-logo.png" class="Instagram" alt="Instagram">
-                </a>
-                <a href="https://wa.me/6285359027483?">
-                    <img src="assets/image/whatsapp.png" class="WhatsApp" alt="WhatsApp">
-                </a>
-                <a href="https://github.com/Izzz03">
-                    <img src="assets/image/github.png" class="GitHub" alt="GitHub">
-                </a>
-            </div>
-        </section>
-
-        <aside id="Contact">
-            <article class="profile card">
+        <aside>
+            <div class="profile-card">
                 <header>
                     <h2>M. Izzaz Zhoorif Nurhan</h2>
                     <p>Medan, Sumatera Utara</p>
                     <figure>
-                        <img src="assets/image/ijas.jpg" class="ijas" alt="Dokumentasi">
+                        <img src="assets/image/ijas.jpg" alt="Dokumentasi">
                         <figcaption>Dokumentasi</figcaption>
                     </figure>
                 </header>
 
                 <section>
                     <h3>Informasi Lainnya</h3>
-                    <table style="text-align: left;">
-                        <tr>
-                            <th>Hometown</th>
-                            <td>Medan</td>
-                        </tr>
-                        <tr>
-                            <th>Hobby</th>
-                            <td>Bermain Game</td>
-                        </tr>
-                        <tr>
-                            <th>Suku</th>
-                            <td>Padang</td>
-                        </tr>
-                        <tr>
-                            <th>Contact</th>
-                            <td>+62 85359027483</td>
-                        </tr>
-                    </table>
+                    <dl>
+                        <dt>Hometown</dt>
+                        <dd>Medan</dd>
+                        <dt>Hobby</dt>
+                        <dd>Bermain Game</dd>
+                        <dt>Suku</dt>
+                        <dd>Padang</dd>
+                        <dt>Contact</dt>
+                        <dd>+62 85359027483</dd>
+                    </dl>
                 </section>
-            </article>
+            </div>
+
+            <section id="kontak">
+                <h2>Kontak</h2>
+                <p>Jika ingin lebih tahu banyak, kunjungi kontak berikut:</p>
+                <nav class="social-media">
+                    <a href="https://instagram.com/izzaz.zhoorif">
+                        <img src="assets/image/instagram-logo.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/6285359027483?">
+                        <img src="assets/image/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://github.com/Izzz03">
+                        <img src="assets/image/github.png" alt="GitHub">
+                    </a>
+                </nav>
+            </section>
         </aside>
     </main>
 
     <footer>
-        <p>© 2024 M. Izzaz Zhoorif Nurhan
+        <p>&copy; 2024 M. Izzaz Zhoorif Nurhan</p>
+    </footer>
+</body>
+</html>

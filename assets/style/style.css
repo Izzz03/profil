@@ -11,9 +11,10 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Warna latar belakang */
+    background-color: #f4f4f4;
 }
 
+/* Header dan Navigasi */
 header {
     background-color: var(--main-color);
     color: white;
@@ -21,7 +22,7 @@ header {
     padding: 20px 0;
 }
 
-.jumbotron h1 {
+header h1 {
     margin: 0;
     font-size: 2.5em;
 }
@@ -34,16 +35,12 @@ nav {
     z-index: 1000;
 }
 
-.navbar-fixed {
-    display: flex;
-    justify-content: center;
-}
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav li {
@@ -62,8 +59,19 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Main Content */
 main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 2;
+    min-width: 300px;
 }
 
 section {
@@ -74,91 +82,119 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Gambar styling */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 310px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px auto;
+    display: block;
+}
+
+figcaption {
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Aside styling */
+aside {
+    flex: 1;
+    min-width: 250px;
+}
+
+.profile-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Media Links */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+/* Definition List Styling */
+dl {
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+/* Headers */
 h2, h3 {
     color: var(--main-color);
 }
 
-.gambar, .pendidikan, .kebab, .kopi, .ijas {
-    width: 100%;
-    max-width: 310px; /* Ukuran maksimal gambar */
-    height: auto; /* Tinggi otomatis */
-    border-radius: 8px; /* Sudut membulat */
-    display: block;
-    margin: 10px auto; /* Pusatkan gambar */
-}
-
-.social-media-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.social-media-links img {
-    width: 50px;
-    height: auto;
-}
-.social-media-links img {
-    width: 50px;
-    height: auto;
-}
-
-.card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.profile header {
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: var(--main-color);
-    color: white;
-}
-
+/* Footer */
 footer {
-    padding: 20px;
     background: var(--main-color);
-    text-align: center;
     color: white;
-    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-@media screen and (max-width: 600px) {
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
     nav ul {
-        flex-direction: row; /* Menyusun navbar secara vertikal pada layar kecil */
-        justify-content: center;
+        flex-wrap: wrap;
     }
-
+    
     nav li {
-        margin: 0 9px; /* Jarak antar item navbar */
+        margin: 5px;
     }
-
-    .GitHub {
-  width: 50px; 
-  height: auto; 
+    
+    figure img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .social-media img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
-.Instagram {
-  width: 50px; 
-  height: auto;
-}
-
-.WhatsApp {
-  width: 50px; 
-  height: auto;
-}
-}
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .profile-card {
+        margin: 10px 0;
+    }
+    }
